@@ -90,5 +90,13 @@ namespace Tests.Models
 
             return sessao;
         }
+
+        [Test]
+        private void DataDeInicioDoEspetaculoIgualADataFim()
+        {
+            DateTime inicio = new DateTime(2010,1,1);
+            DateTime fim = new DateTime(2010, 1, 1);
+            
+        }
     }
 }

@@ -37,6 +37,17 @@ namespace AgileTickets.Web.Models
         public virtual IList<Sessao> CriaSessoes(DateTime inicio, DateTime fim, Periodicidade periodicidade)
         {
             // ALUNO: Não apague esse metodo. Esse sim será usado no futuro! ;)
+            switch (periodicidade)
+            { 
+                case Periodicidade.DIARIA:
+                    break;
+                case Periodicidade.SEMANAL:
+                    break;
+                default:
+                    break;
+            
+            }
+
             return null;
         }
 
@@ -82,5 +93,11 @@ namespace AgileTickets.Web.Models
             }
             return totDisp;
         }
+
+        private void CriaSessaoSemanal()
+        { }
+
+        private void CriaSessaoDiaria()
+        { }
     }
 }
